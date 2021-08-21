@@ -1,0 +1,378 @@
+@font-face{
+    font-family: "run";
+    src: url(../font/run.ttf);
+}
+@font-face {
+    font-family: "Lemon-Milk";
+    src: url(/font/LEMONMILK-Bold.otf);
+    src: url(/font/LEMONMILK-BoldItalic.otf);
+    src: url(/font/LEMONMILK-Light.otf);
+    src: url(/font/LEMONMILK-LightItalic.otf);
+    src: url(/font/LEMONMILK-Medium.otf);
+    src: url(/font/LEMONMILK-MediumItalic.otf);
+    src: url(/font/LEMONMILK-Regular.otf);
+    src: url(/font/LEMONMILK-RegularItalic.otf);
+}
+:root{
+    /*Colores para la Pagina*/
+    --rojo:#C20F1A;
+    --azul: #022A74;
+    --azulClaro: #77bae8;
+    --fondo: #F9F9F9;
+    --letra2:#B8B8B8;
+     /*Fuentes para la Pagina*/
+    --principal: "run";
+    --secundaria: "Lemon-Milk";
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-image: url(../img/Fondo.png);
+    background-position: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--principal);
+    font-size: 1.5rem;
+}
+/*Globales*/
+.contenedor{
+    max-width: 127.6rem;
+    width: 95%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    background-color: #F9F9F9;
+}
+a{
+    text-decoration: none;
+}
+h1{
+ font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+img{
+    max-width: 100%;
+}
+/*Utilidades*/
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.numero{
+    font-family: var(--secundaria);
+}
+.centrar-texto{
+    text-align: center;
+}
+/*Menu*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 18rem;
+}
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-basis: calc(50% - 1rem);
+}
+.mini{
+    display: none;
+}
+.navegacion a{
+    color: #000;
+}
+.activo{
+    background-color: var(--azulClaro);    
+    padding: 1rem;
+    border-radius: 5rem;;
+}
+.navegacion--icono{
+    width: 3rem;
+}
+.navegacion__item a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Cuerpo*/
+.banner{
+    height: 50rem;
+}
+.item{
+ height: 50rem;
+ position: relative;
+}
+.item img{
+    position: relative;
+}
+.item{
+    position: absolute;
+}
+.menu2{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu2 a{
+    padding: 2rem;
+    color: black;
+}
+.menu2__item{
+    display: block;
+    margin: auto;
+    width: 14.9rem;
+}
+.pro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pro__item{
+    margin: 10.8rem;
+    text-align: center;
+}
+.pro__item img{
+    width: 11.9rem;
+}
+.pro--servicios{
+    font-size: 11.9rem;
+}
+.tablaPrecios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tablaPrecios__tarifa{
+    border: 10px solid #022A74;
+    border-radius: 4rem;
+    width: 45.6rem;
+    margin: 9rem;
+}
+.tablaPrecios__precio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:  1.703rem;
+    margin-right: 1.703rem;
+    margin-bottom: 0;
+    border-bottom: .3rem solid red;
+    
+}
+.tablaPrecios__precio hr{
+   width: 1px;
+}
+.tablaPrecios__item{
+    border-bottom: .3rem solid red;
+    margin: 1.9rem 1.6rem;
+    height: 3;
+}
+.tablaPrecios__item i{
+    display: block;
+    padding: 1rem;
+}
+.tablaPrecios__btn{
+    margin: 0 auto;
+    margin-top: 4.1rem;
+    margin-bottom: 4.1rem;
+    border-radius: 5rem;
+    background-color: var(--azul);
+    width: 19.85rem;
+    height: 7.5rem;
+    display: table;
+    /* display: table-cell;
+    vertical-align: middle; */
+}
+.tablaPrecios__btn  a{
+    color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.preguntas__titulo{
+    text-align: center;
+}
+.preguntas__imagen{
+    width: 80.9rem;
+    display: block;
+    margin: 0 auto;
+}
+.crc{
+
+}
+ .pie{
+    background-color: #dbe1eb;
+}
+.logos{
+    margin: 0;
+    padding-left: 5rem;
+    padding-right: 4rem;
+    padding-top: 3.8rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logos img{
+    width: 20.69rem;
+}
+.comunicacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.8rem;
+}
+.redes{
+    text-align: center;
+}
+.redes i{
+    font-size: 3rem;
+    color: var(--azul);
+    padding: 0 3.8rem;
+}
+/*Television*/
+.tvmenu{
+    margin-top: 14rem;
+    margin-bottom: 4.8rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+.tvmenu__navegacion{
+    /* width: 3rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tvmenu__imagen{
+    width: 30rem;
+}
+.programacion{
+    padding-top: 7.1rem;
+    padding-bottom: 7.2rem;
+    height: 101rem;
+}
+.canales{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+/*Canal Giratorio*/
+.analoga, .digital{
+    margin-right: 14rem;
+    margin-left: 5rem;
+}
+.digital{
+    
+}
+.analoga__programacion{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 2rem;
+}
+/**Tarjeta Canal**/
+  
+.canal {
+    background-color: transparent;
+    width: 9rem;
+    height: 9rem;
+    perspective: 100rem;
+}  
+.canal__inicio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+.canal:hover .canal__inicio {
+    transform: rotateY(180deg);
+}
+.canal__frente, .canal__info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.canal__frente {
+    background-color: #F9F9F9;
+    color: black;
+    border-radius: 3rem;
+}
+.canal__img{
+    display: block;
+    margin-top: 1rem;
+    margin: 1rem auto;
+    width:7rem;
+    height:7rem;
+}
+.canal__info {
+    font-size: 1.6rem;
+    background-color: #77bae8;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 3rem;
+}
+/*Frame*/
+.frame h3{
+    margin-left: 10rem;
+}
+.frame__iframe{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    display: block;
+}
+@media (max-width: 768px) {
+    .contenedor{
+        width: 100%;
+    }
+    .menu2{
+        margin-top: -2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .navegacion{
+        display: none;
+    }
+    .mini{
+        display: block;
+        font-size: 4rem;
+        margin: auto auto;
+    }
+    .pro{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+    .tablaPrecios{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+    .tablaPrecios__tarifa {
+        width: 25rem;
+        display: block;
+        margin-left: 6rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        
+    }
+}
